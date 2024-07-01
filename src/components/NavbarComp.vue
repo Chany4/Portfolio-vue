@@ -1,0 +1,98 @@
+<template lang="">
+    <div>
+      <nav class="navbar navbar-expand-lg shadow-sm fixed-top nav">
+      <div class="container-fluid">
+        <router-link-exact-active
+          class="navbar-brand fw-bold fs-4 mx-5"
+          href="#main"
+          title="click on me" id="logo"
+          >CHANDRÉ</router-link-exact-active
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarNavDropdown"
+        >
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <router-link class="nav-link" aria-current="page" href="#main">Home</router-link>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                About Me
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="#aboutSection"
+                    ><button
+                      type="button"
+                      class="btn"
+                      data-bs-toggle="modal"
+                      data-bs-target="#staticBackdrop"
+                    >
+                      Brief
+                    </button></a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#aboutSection"
+                    ><button type="button" class="btn">Detailed</button></a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#Resume">Resume</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#projects">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#testimonials">Testimonials</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact Me</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    </div>
+</template>
+<script>
+export default {
+    
+}
+</script>
+<style scoped>
+  .nav{
+    background-color: rgb(255, 174, 174);
+    z-index: 2;
+  }
+  #navBar{
+    background-color: rgb(255, 174, 174);
+    z-index: 2;
+    /* position:sticky; */
+  }
+  
+  .nav-link {
+    color: ghostwhite;
+    font-weight: bold;
+  }  
+</style>
